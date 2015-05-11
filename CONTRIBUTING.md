@@ -4,40 +4,24 @@ Feel free to make any changes to the website.
 
 *	Download the repository.
 
-	{% highlight bash %}
-
-	$ git clone git@github.com:IEEE-NITK/website.git
-
-	{% end highlight %}
+`$ git clone git@github.com:IEEE-NITK/website.git`
 
 *	Setup the flask virtual environment.
 
-	{% highlight bash %}
+`$ cd website`
 
-	$ cd website
+`$ virtualenv flask`
 
-	$ virtualenv flask
-
-	$ source flask/bin/activate
-
-	{% end highlight %}
+`$ source flask/bin/activate`
 
 *	Install dependencies.
 
-	{% highlight bash %}
-
-	$ pip install -r requirements.txt
-
-	{% end highlight %}
+`$ pip install -r requirements.txt`
 
 *	Run!
 
-	{% highlight bash %}
+`$ ./run.py`
 
-	$ ./run.py
-
-	{% end highlight %}
-	
 The site will be up and running at <http://localhost:5000>.
 
 ## Making changes
