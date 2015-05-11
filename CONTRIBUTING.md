@@ -8,7 +8,7 @@ Feel free to make any changes to the website.
 
 	$ git clone git@github.com:IEEE-NITK/website.git
 
-	{% end highlight %}
+	{% endhighlight %}
 
 *	Setup the flask virtual environment.
 
@@ -20,7 +20,7 @@ Feel free to make any changes to the website.
 
 	$ source flask/bin/activate
 
-	{% end highlight %}
+	{% endhighlight %}
 
 *	Install dependencies.
 
@@ -28,7 +28,7 @@ Feel free to make any changes to the website.
 
 	$ pip install -r requirements.txt
 
-	{% end highlight %}
+	{% endhighlight %}
 
 *	Run!
 
@@ -36,7 +36,7 @@ Feel free to make any changes to the website.
 
 	$ ./run.py
 
-	{% end highlight %}
+	{% endhighlight %}
 	
 The site will be up and running at <http://localhost:5000>.
 
