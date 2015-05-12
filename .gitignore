@@ -1,2 +1,5 @@
 # Ignore flask and related tools
 /flask/*
+
+# Ignore pyc files
+/app/*.pyc
