@@ -1,4 +1,5 @@
-from flask import render_template
+from flask import render_template, flash, redirect
+from forms import ContactForm
 from app import app
 
 
@@ -28,9 +29,13 @@ def wie():
 def calendar():
 	return render_template('calendar.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-	return render_template('contact.html')
+	form = ContactForm()
+	if form.validate_on_submit():
+		flash("Thank you! We'll get back to you as soon as possible.")
+		return redirect('/home')
+	return render_template('contact.html', form=form)
 
 @app.errorhandler(404)
 def not_found_error(error):
