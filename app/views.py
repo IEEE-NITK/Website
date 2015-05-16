@@ -1,5 +1,7 @@
 from flask import render_template, flash, redirect
 from forms import ContactForm
+from config import ADMINS
+from emails import send_email
 from app import app
 
 
@@ -33,6 +35,7 @@ def calendar():
 def contact():
 	form = ContactForm()
 	if form.validate_on_submit():
+		send_email(form.subject.data, form.email.data, ADMINS, form.message.data)
 		flash("Thank you! We'll get back to you as soon as possible.")
 		return redirect('/home')
 	return render_template('contact.html', form=form)
