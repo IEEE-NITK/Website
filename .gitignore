@@ -2,4 +2,5 @@
 /flask/*
 
 # Ignore pyc files
+*.pyc
 /app/*.pyc
