@@ -16,9 +16,21 @@ def index():
 def about():
 	return render_template('about.html')
 
-@app.route('/sig_overview')
-def sig_overview():
+@app.route('/sigs')
+def sigs():
 	return render_template('sig_overview.html')
+
+@app.route('/sigs/diode')
+def sigs_diode():
+	return render_template('diode.html')
+
+@app.route('/sigs/python')
+def sigs_python():
+	return render_template('python.html')
+
+@app.route('/sigs/piston')
+def sigs_piston():
+	return render_template('piston.html')
 
 @app.route('/sight')
 def sight():
