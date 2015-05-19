@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<div align=center>
+<div class="panel panel-default">
+  <div class="panel-body">
 	<form class="form-horizontal" action="" method="post" name="contact">
     {{ form.hidden_tag() }}
         <fieldset>
@@ -53,5 +54,6 @@
             </div>
         </fieldset>
    	</form>
+  </div>
 </div>
 {% endblock %}
