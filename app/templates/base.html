@@ -2,14 +2,54 @@
 <html lang="en">
   <head>
     <title>Welcome to the NITK IEEE</title>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/bootstrap2.min.css" rel="stylesheet" media="screen">
     <link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+
   <!-- Navbar -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="/static/img/ieee_logo.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/about">About<span class="sr-only">(current)</span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Special Interest Groups<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/sigs">Overview</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/sigs/diode">Diode</a></li>
+                  <li><a href="/sigs/piston">Piston</a></li>
+                  <li><a href="/sigs/python">Python</a></li>
+                </ul>
+              </li>
+              <li><a href="/sight">SIGHT</a></li>
+              <li><a href="/epics">EPICS</a></li>
+              <li><a href="/wie">WIE</a></li>
+              <li><a href="/gini">GINI</a></li>
+              <li><a href="/general_events">General Events</a></li>
+              <li><a href="/awards_and_initiatives">Awards and Initiatives</a></li>
+              <li><a href="/calendar">Calendar</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- Navbar -->
+  <!--
     <div class="container">
       <div class="navbar">
         <div class="navbar-inner">
@@ -43,6 +83,7 @@
           </div>
         </div>
       </div>
+    -->
     <hr>
     {% with messages = get_flashed_messages() %}
       {% if messages %}
