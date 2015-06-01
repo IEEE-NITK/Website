@@ -56,6 +56,9 @@ def general_events():
 def awards_and_initiatives():
 	return render_template('a_and_i.html')
 
+@app.route('/members')
+def members():
+	return render_template('members.html')
 
 @app.route('/calendar')
 def calendar():
